@@ -41,13 +41,13 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 - To see running OZ version details `INDEX` `HELP` `←`
 - In any file path dialog you can use `◇` `J` (Ctrl-J in OZvm) to toggle devices to save having to remember the device names (:EPR.0, :RAM.0, etc.). In fairness this key combo is stencilled on the Z88 screen bezel, but useful to know if using OZvm
 - In Filer use `TAB` to mark multiple selections
-- Newer OZ versions allow you to hold Esc on boot to skip Slot 1 ROM boot
+- Newer OZ versions allow you to hold `ESC` on boot to skip Slot 1 ROM boot
 
 ### How to convert a .BAS file back to text
 This information is from the section "Editing BASIC programs using PipeDream" in the [Filer reference](https://cambridgez88.jira.com/wiki/spaces/UG/pages/35913796/Section+Seven+-+Filer+reference) (a very useful page)
 - You can tee screen output to the special file `:RAM.-/S.sgn`
-- In BASIC you can type `LIST □+S` <ENTER> to dump a program listing out to this text file
-- Then type `□-S` <ENTER> to stop the tee
+- In BASIC you can type `LIST □+S` to dump a program listing out to this text file
+- Then type `□-S` (typed in full with the minus, followed by `ENTER`) to stop the tee
 - Then use PipeDream to load (`◇` `F` `L`) the file `:RAM.-/S.sgn`
 - Add:
   ```
@@ -60,7 +60,7 @@ This information is from the section "Editing BASIC programs using PipeDream" in
 ### Transferring CLI files to OZvm
 If you are using the OZvm emulator you will need to use PipeDream to open each file as plain text, then save it once more as plain text to fix the line endings (which are fixed by EazyLink during a serial file transfer to a real Z88).
 
-### Bank addressing - need to know this when using RomCombiner to make compilations of ROM apps
+### Bank addressing knowledge for RomCombiner
 - 1MB flash card:
   ```
   Flash $00 to $3F ( 0 to 63)
