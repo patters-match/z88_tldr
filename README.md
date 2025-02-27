@@ -61,7 +61,7 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 If you are using the OZvm emulator you will need to use PipeDream to open each file as plain text, then save it once more as plain text to fix the line endings (which are fixed by EazyLink during a serial file transfer to a real Z88).
 
 ### Bank addressing
-- 1MB f lash card:
+- 1MB flash card:
   ```
   Flash $00 to $3F ( 0 to 63)
   ```
