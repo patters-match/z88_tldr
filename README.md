@@ -37,6 +37,10 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 - For tinkering with a real Z88 to explore its software - RAM apps would be the easiest way.
 - If you are mainly using OZvm emulator, then ROM apps are easier (click on a slot for a new flash card, then 'load images' and select multiple numbered bank files, or a single .epr file)
 
+## OZ version constraints
+Distilling this knowledge was a monumental task:
+![Feature Table](./OZ_feature_table.png)
+
 ## Non-obvious tips
 - To see running OZ version details `INDEX` `HELP` `←`
 - In any file path dialog you can use `◇` `J` (Ctrl-J in OZvm) to toggle devices to save having to remember the device names (:EPR.0, :RAM.0, etc.). In fairness this key combo is stencilled on the Z88 screen bezel, but useful to know if using OZvm
