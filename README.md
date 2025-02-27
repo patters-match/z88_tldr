@@ -42,13 +42,13 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 ![Feature Table](./OZ_feature_table.png)
 
 ### Suggestions
-- For compatibility with all Z88 software use [OZ 4.0 Downgrade ROM](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade) (inc. SpellMaster, Vision2, and other tools)
+- For compatibility with all Z88 software and significant quality of life fixes use [OZ 4.0 Downgrade ROM](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade) (inc. SpellMaster, Vision2, and other tools)
 - Else use OZ 4.7.1
 - Or if adventurous use OZ 5.0
 
 ## Non-obvious tips
 - To see running OZ version details `INDEX` `HELP` `←`
-- To load a custom ROM in OZvm click on the left box in Slot 0 below the keyboard
+- To boot a specific ROM in OZvm click on the left box in Slot 0 below the keyboard
 - Use Y-Modem for fastest serial file transfer - guide [here](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676457477/YMODEM+fastest).
 - In any file path dialog you can use `◇` `J` (Ctrl-J in OZvm) to toggle devices to save having to remember the device names (:EPR.0, :RAM.0, etc.). In fairness this key combo is stencilled on the Z88 screen bezel, but useful to know if using OZvm
 - In Filer use `TAB` to mark multiple selections
