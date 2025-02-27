@@ -44,7 +44,7 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 ### Suggestions
 - For compatibility with all Z88 software and significant quality of life fixes use my [OZ 4.0 Downgrade ROM](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade) (inc. SpellMaster, Vision2, and other tools)
 - Else use [OZ 4.7.1](https://sourceforge.net/projects/z88/files/Z88%20ROM/)
-- Or if you want more features (a command shell, ANSI terminal, ISO Latin-9 support, compressed RAM apps, flash memory deleted space reclamation, PCL5 printing) and faster performance, at the expense of some compatibility with older software - then try [OZ 5.0](https://sourceforge.net/projects/z88/files/Z88%20ROM/)
+- Or if you want more features (a command shell, ANSI terminal, ISO Latin-9 support, device password protection, compressed RAM apps, flash memory deleted space reclamation, PCL5 printing) and faster performance, at the expense of some compatibility with older software - then try [OZ 5.0](https://sourceforge.net/projects/z88/files/Z88%20ROM/)
 
 ## Non-obvious tips
 - To see running OZ version details `INDEX` `HELP` `←`
