@@ -60,7 +60,7 @@ This information is from the section "Editing BASIC programs using PipeDream" in
 ### Transferring CLI files to OZvm
 If you are using the OZvm emulator you will need to use PipeDream to open each file as plain text, then save it once more as plain text to fix the line endings (which are fixed by EazyLink during a serial file transfer to a real Z88).
 
-### Bank addressing
+### Bank addressing - need to know this when using RomCombiner to make compilations of ROM apps
 - 1MB flash card:
   ```
   Flash $00 to $3F ( 0 to 63)
