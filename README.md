@@ -50,8 +50,8 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 - To see running OZ version details `INDEX` `HELP` `←`
 - To boot a specific ROM in OZvm click on the left box in Slot 0 below the keyboard
 - Use YMODEM for fastest serial file transfer - guide [here](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676457477/YMODEM+fastest).
-- In any file path dialog you can use `◇` `J` (Ctrl-J in OZvm) to toggle devices to save having to remember the device names (:EPR.0, :RAM.0, etc.). In fairness this key combo is stencilled on the Z88 screen bezel, but useful to know if using OZvm
-- In Filer use `TAB` to mark multiple selections
+- In device dialog you can use `◇` `J` (Ctrl-J in OZvm) to toggle devices to save having to remember the device names (:EPR.0, :RAM.0, etc.). In fairness this key combo is stencilled on the Z88 screen bezel, but useful to know if using OZvm
+- In Filer you can use `TAB` to mark multiple selections, and navigate into directories using `SHIFT` `↓` and back up a level using `SHIFT` `↑`
 - Newer OZ versions allow you to hold `ESC` on boot to skip Slot 1 ROM boot
 
 ### How to convert a .BAS file back to text
