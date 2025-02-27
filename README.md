@@ -44,7 +44,7 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 - Newer OZ versions allow you to hold Esc on boot to skip Slot 1 ROM boot
 
 ### How to convert a .BAS file back to text
-- This information is from the section "Editing BASIC programs using PipeDream" in the [Filer reference](https://cambridgez88.jira.com/wiki/spaces/UG/pages/35913796/Section+Seven+-+Filer+reference) (a very useful page)
+This information is from the section "Editing BASIC programs using PipeDream" in the [Filer reference](https://cambridgez88.jira.com/wiki/spaces/UG/pages/35913796/Section+Seven+-+Filer+reference) (a very useful page)
 - You can tee screen output to the special file `:RAM.-/S.sgn`
 - In BASIC you can type `LIST □+S` <ENTER> to dump a program listing out to this text file
 - Then type `□-S` <ENTER> to stop the tee
