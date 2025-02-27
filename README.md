@@ -1,1 +1,84 @@
-# z88_tldr
+# The Cambridge Z88 Computer - An Overview
+
+So you're interested in the Z88. You're probably technically minded. However, it's quite a difficult machine to explore for a few reasons:
+- Transferring software onto the machine is complicated and slow
+- Significant developments have been made to the OS incrementally since 1987, up to the present day
+- Awareness of this chronology is key
+- Though much of this information can be found in the Wiki, it requires a lot of reading
+
+I aim to present here a short primer, to cover the most of the quirks of the machine that were far from obvious to a new user.
+
+
+## Z88 Hardware
+
+The Z88 uses a low power CMOS version of the Z80 processor. The base configuration has only 32KB of RAM and a 128KB ROM. Three card slots allow for the RAM to be expanded, for applications to be executed from ROM cards, and for writable EPROM storage. The Z88 was fully solid state. Consequently the Z88 has a relatively large 4MB maximum address space, 1MB per slot (the motherboard is slot 0). Remember that a Z80 CPU can only address 64KB though. The Z80 pages this 4MB address space in 16KB banks - this will be important.
+
+The Operating System 'OZ' is stored in ROM, together with the bundled applications - chief among them PipeDream. OZ is hand written in assembly language, so it performs optimally. It supports multitasking, and the whole system is very power efficient. Once loaded with batteries the machine is never really off, it enters a sleep state when idle. Pressing both Shift keys simultaneously will sleep and wake. The RAM remains powered while asleep. Battery life is significantly extended by replacing the internal 32KB of pseudo-SRAM with a more power efficient 512KB true SRAM chip. A Z88 user could save their work documents in the RAM filesystem, but if the machine crashed this would be lost. EPROM cards offered a non-volatile solution, though they needed erasing with UV light. Later, flash memory cards were made to better fit this requirement.
+
+You will encounter mentions of an "Expanded" Z88 configuration, which is a machine which has 128KB or more of additional RAM in card slot 1 (or in any slot after OZ 4.0). This enlarges the PipeDream document map view and, crucially, it expands the BBC BASIC workspace from 8KB to 40KB.
+
+
+## Applications, and Storage
+
+### First there were ROM apps...
+
+Z88 applications were originally distributed on Eprom cards, to be inserted into the machine's three available slots. Application cards can be inserted and ejected safely while the computer is on, provided that the app is not running. Combining multiple apps onto a single card is clearly desirable. These ROMs can be dumped out into their constituent 16KB bank files. There are a maximum of 64 x 16KB banks in a card slot's 1MB address space. These are numbered in reverse order from 63 to 0. When you see files with these numbered file extensions starting at .63 you are looking at a Z88 ROM image.
+
+The first utility that allowed users to write their own compilations of applications was RomCombiner. It's very flexible, but somewhat tricky for a new Z88 user to understand. It also needs an expanded Z88 configuration, or else you will encounter a "Bad Program" error. RomUpdate is a newer but more straightforward tool to write applications or OZ versions to flash.
+
+There is another consideration - flash storage can only be erased in 64KB sectors (though exceptionally, SST flash memory uses 4KB sectors). Romcombiner has now been updated to allow individual 16KB banks to be erased on SST devices.
+
+### Then came RAM apps...
+
+In around 2000, a separate Installer application was developed by Garry Lancaster which allowed ROM dumps to be loaded into RAM and executed from there, avoiding the complexity of combining and blowing the ROM images to EPROM or flash storage. This RAM app support was integrated into OZ 4.6 onwards. A RAM app consists of a .app header, and the same 16KB banks as the ROM app, with .63 bank becoming .ap0, .62 becoming .ap1, and so on.
+The OZ 5.0 RAM app specification added lz49 compression and allows an app to be concatenated into a single file for simplicity. Serial transfers become less cumbersome, and you can then fit more apps on your flash card.
+
+### Should I use ROM apps or RAM apps?
+- For tinkering with a real Z88 to explore its software - RAM apps would be the easiest way.
+- If you are mainly using OZvm emulator, then ROM apps are easier (click on a slot for a new flash card, then 'load images' and select multiple numbered bank files, or a single .epr file)
+
+## Non-obvious tips
+- To see running OZ version details `INDEX` `HELP` `←`
+- In any file path dialog you can use `◇` `J` (Ctrl-J in OZvm) to toggle devices to save having to remember the device names (:EPR.0, :RAM.0, etc.). In fairness this key combo is stencilled on the Z88 screen bezel, but useful to know if using OZvm
+- In Filer use `TAB` to mark multiple selections
+- Newer OZ versions allow you to hold Esc on boot to skip Slot 1 ROM boot
+
+### How to convert a .BAS file back to text
+- This information is from the section "Editing BASIC programs using PipeDream" in the [Filer reference](https://cambridgez88.jira.com/wiki/spaces/UG/pages/35913796/Section+Seven+-+Filer+reference) (a very useful page)
+- You can tee screen output to the special file `:RAM.-/S.sgn`
+- In BASIC you can type `LIST □+S` <ENTER> to dump a program listing out to this text file
+- Then type `□-S` <ENTER> to stop the tee
+- Then use PipeDream to load (`◇` `F` `L`) the file `:RAM.-/S.sgn`
+- Add:
+  ```
+  #B
+  .J
+  NEW
+  ```
+  to the top, and add `SA."MyProgName.bas"` to the end of the file, and save the PipeDream file with a CLI extension. When this file is executed from Filer it will type the entire listing into the BASIC interpreter and save it too.
+
+### Transferring CLI files to OZvm
+If you are using the OZvm emulator you will need to use PipeDream to open each file as plain text, then save it once more as plain text to fix the line endings (which are fixed by EazyLink during a serial file transfer to a real Z88).
+
+### Bank addressing
+- 1MB f lash card:
+  ```
+  Flash $00 to $3F ( 0 to 63)
+  ```
+
+- Hybrid cards (512KB RAM/512KB Flash):
+  ```
+  RAM   $00 to $1F ( 0 to 31)
+  Flash $20 to $3F (32 to 63)
+  ```
+
+- Slot 0 (motherboard):
+  ```
+  Flash $00 to $1F ( 0 to 31)
+  RAM   $20 to $3F (32 to 63)
+  ```
+
+## To do:
+- OS Upgrade path recommendations
+- Describe the files in each OZ ROM bundle (see readme from OZ 4.5)
+- Update the 4.7.1 ROM zip file to include descriptive folder names
