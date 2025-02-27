@@ -90,6 +90,5 @@ If you are using the OZvm emulator you will need to use PipeDream to open each f
   ```
 
 ## To do:
-- OS Upgrade path recommendations
-- Describe the files in each OZ ROM bundle (see readme from OZ 4.5)
+- Describe the files in an OZ ROM bundle (see readme from OZ 4.5)
 - Update the 4.7.1 ROM zip file to include descriptive folder names
