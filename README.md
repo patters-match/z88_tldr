@@ -10,7 +10,6 @@ I aim to present here a short primer, to cover the most of the quirks of the mac
 
 
 ## Z88 Hardware
-
 The Z88 uses a low power CMOS version of the Z80 processor. The base configuration has only 32KB of RAM and a 128KB ROM. Three card slots allow for the RAM to be expanded, for applications to be executed from ROM cards, and for writable EPROM storage. The Z88 was fully solid state. Consequently the Z88 has a relatively large 4MB maximum address space, 1MB per slot (the motherboard is slot 0). Remember that a Z80 CPU can only address 64KB though. The Z80 pages this 4MB address space in 16KB banks - this will be important.
 
 The Operating System 'OZ' is stored in ROM, together with the bundled applications - chief among them PipeDream. OZ is hand written in assembly language, so it performs optimally. It supports multitasking, and the whole system is very power efficient. Once loaded with batteries the machine is never really off, it enters a sleep state when idle. Pressing both Shift keys simultaneously will sleep and wake. The RAM remains powered while asleep. Battery life is significantly extended by replacing the internal 32KB of pseudo-SRAM with a more power efficient 512KB true SRAM chip. A Z88 user could save their work documents in the RAM filesystem, but if the machine crashed this would be lost. EPROM cards offered a non-volatile solution, though they needed erasing with UV light. Later, flash memory cards were made to better fit this requirement.
@@ -37,8 +36,8 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 - For tinkering with a real Z88 to explore its software - RAM apps would be the easiest way.
 - If you are mainly using OZvm emulator, then ROM apps are easier (click on a slot for a new flash card, then 'load images' and select multiple numbered bank files, or a single .epr file)
 
+
 ## OZ version constraints
-Distilling this knowledge was a monumental task:
 ![Feature Table](./OZ_feature_table.png)
 
 ## Non-obvious tips
