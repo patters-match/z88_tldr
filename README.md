@@ -33,7 +33,7 @@ In around 2000, a separate Installer application was developed by Garry Lancaste
 The OZ 5.0 RAM app specification added lz49 compression and allows an app to be concatenated into a single file for simplicity. Serial transfers become less cumbersome, and you can then fit more apps on your flash card.
 
 ### Should I use ROM apps or RAM apps?
-- For tinkering with a real Z88 to explore its software - RAM apps would be the easiest way.
+- For tinkering with a real Z88 to explore its software - RAM apps would be the easiest way, provided you have plenty of RAM.
 - If you are mainly using OZvm emulator, then ROM apps are easier (click on a slot for a new flash card, then 'load images' and select multiple numbered bank files, or a single .epr file)
 
 
