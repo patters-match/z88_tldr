@@ -63,7 +63,7 @@ This information is from the section "Editing BASIC programs using PipeDream" in
 - Then use PipeDream to load (`◇` `F` `L`) the file `:RAM.-/S.sgn`
 - Add:
   ```
-  □B
+  #B
   .J
   NEW
   ```
