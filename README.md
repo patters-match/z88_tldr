@@ -40,6 +40,7 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 ## OZ version selection
 ### Features and constraints
 ![Feature Table](./OZ_feature_table.png)
+* SpellMaster does not work as a RAM app on OZ 4.6 or higher, because its bank switching code assumes 8 consecutive banks. When blown to flash as a ROM app it's fine, and earlier RAM app tool Installer is able to reserve 8 consecutive banks for it.
 
 ### Suggestions
 - For compatibility with all Z88 software and significant quality of life fixes (flash tools, XY-Modem, Installer) plus some bundled application software (SpellMaster, Vision2) - use my custom [OZ 4.0 Downgrade ROM](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade)
