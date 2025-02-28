@@ -70,7 +70,7 @@ This information is from the section "Editing BASIC programs using PipeDream" in
   to the top, and add `SA."MyProgName.bas"` to the end of the file, and save the PipeDream file with a CLI extension. When this file is executed from Filer it will type the entire listing into the BASIC interpreter and save it too.
 
 ### Transferring CLI files to OZvm
-If you are using the OZvm emulator you will need to use PipeDream to open each file as plain text, then save it once more as plain text to fix the line endings (which are fixed by EazyLink during a serial file transfer to a real Z88).
+If you are using the OZvm emulator you will need to use PipeDream to open each file as plain text, then save it once more as plain text to fix the line endings (which are fixed automatically by EazyLink during a serial file transfer to a real Z88).
 
 ### Bank addressing knowledge for RomCombiner
 - 1MB flash card:
