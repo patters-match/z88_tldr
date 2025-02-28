@@ -90,7 +90,7 @@ If you are using the OZvm emulator you will need to use PipeDream to open each f
   RAM   $20 to $3F (32 to 63)
   ```
 
-It's trivial to combine single bank applications onto a single card. However, apps which occupy multiple banks will contain their own bank switching code which often makes assumptions about which banks it will occupy and which physical slots it may reside in, which can prevent such apps from working in compilations. They can be fixed though with some patience and the disassembler [dzasm](https://gitlab.com/b4works/dzasm/-/tree/master).
+It's trivial to combine single bank applications onto a single card. However, apps which occupy multiple banks will contain their own bank switching code which often makes assumptions about which banks it will occupy and which physical slots it may reside in, which can prevent such apps from working in compilations. They can be fixed though with some patience and the disassembler [dzasm](https://gitlab.com/b4works/dzasm/-/tree/master). See my own binary hacks below.
 
 ## My contributions to the Z88
 - [Internal 512KB SRAM upgrade guide](https://sinclairzxworld.com/viewtopic.php?p=43036).
