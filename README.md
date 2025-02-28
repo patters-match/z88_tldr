@@ -93,6 +93,19 @@ If you are using the OZvm emulator you will need to use PipeDream to open each f
 
 It's trivial to combine single bank applications onto a single card. However, apps which occupy multiple banks will contain their own bank switching code which often makes assumptions about which banks it will occupy and which physical slots it may reside in, which can prevent such apps from working in compilations. They can be fixed though with some patience and the disassembler [dzasm](https://gitlab.com/b4works/dzasm/-/tree/master).
 
+## My contributions to the Z88
+- [Internal 512KB SRAM upgrade guide](https://sinclairzxworld.com/viewtopic.php?p=43036).
+- [No traces cut ROM to 512KB flash upgrade guide](https://sinclairzxworld.com/viewtopic.php?p=43320).
+- [Ported additional flash memory compatibility](https://bitbucket.org/cambridge/z88/pull-requests/1) from OZ 4.7.1 and 5.0 back to the Z88 standard library.
+- [Recompiled existing standalone apps with this support](https://www.sinclairzxworld.com/viewtopic.php?f=24&t=4783) (FlashStore, RomCombiner, RomUpdate, EazyLink2, FlashTest). Crucially, this allows a stock Z88 to write to all flash cards. Newer flash chip choices following the obsolesence of the originally supported Intel and AMD flash chips had prevented this, making an unmodified Z88 unable to bootstrap itself to a newer version of OZ.
+- [Improved FlashStore](https://bitbucket.org/cambridge/z88/pull-requests/2) to graphically indicate SST flash cards.
+- [Improved RomCombiner](https://bitbucket.org/cambridge/z88/pull-requests/3) to distinguish between 64KB and 16KB sectors, and display valid ranges for selection [even for the inverted slot 0](https://bitbucket.org/cambridge/z88/pull-requests/6).
+- [Improved FlashTest](https://bitbucket.org/cambridge/z88/pull-requests/1/diff#chg-z88apps/flashtest/fltest.asm) with 64KB/16KB sector support, and displaying the card type before starting the test.
+- [Update and tidy SourceForge downloads](https://sourceforge.net/projects/z88/files/).
+- [Documenting YMODEM transfers](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676457477/YMODEM+fastest) with modern computers
+- [Binary hacking Ranger Vision2 terminal](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2702114818/Vision2+Fix+Patch) for relative bank addressing, and to exit to prevent crashing newer OZ.
+- [Binary hacking SpellMaster](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2735439875/Spell-Master+Fix+Patches) for relative bank addressing.
+- [OZ Downgrade ROM](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade) to allow an upgraded Z88 to return to full compatibility with old world software.
 
 ## To do:
 - Describe the files in an OZ ROM bundle (see readme from OZ 4.5)
