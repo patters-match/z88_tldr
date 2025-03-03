@@ -47,7 +47,7 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 - However if you want more features (a command shell, ANSI terminal, ISO Latin-9 support, device password, compressed RAM apps, flash memory deleted space reclamation, PCL5 printing) and faster performance, but at beta level readiness - then try [OZ 5.0](https://sourceforge.net/projects/z88/files/Z88%20ROM/)
 
 ## Non-obvious tips
-- To see running OZ version details `INDEX` `HELP` `←`
+- To see running OZ version details: `INDEX` `HELP` `←`
 - To boot a custom ROM file in OZvm click on the left box in Slot 0 below the keyboard
 - Newer OZ versions allow you to hold `ESC` on boot to skip Slot 1 ROM boot
 - Use YMODEM for fastest serial file transfer - guide [here](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676457477/YMODEM+fastest).
