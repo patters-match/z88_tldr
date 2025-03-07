@@ -101,7 +101,7 @@ It's trivial to combine single bank applications onto a single card. However, ap
 - [Improved RomCombiner](https://bitbucket.org/cambridge/z88/pull-requests/3) to distinguish between 64KB sector or individual 16KB bank erasing where supported, and to display valid ranges for selection [even for the inverted slot 0](https://bitbucket.org/cambridge/z88/pull-requests/6).
 - [Improved FlashTest](https://bitbucket.org/cambridge/z88/pull-requests/1/diff#chg-z88apps/flashtest/fltest.asm) with 4KB sector support, and displaying the card type before starting the test.
 - [Updated and tidied SourceForge download site](https://sourceforge.net/projects/z88/files/).
-- [Documented faster YMODEM serial transfers](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676457477/YMODEM+fastest) with modern computers.
+- [Documented faster YMODEM serial file transfers](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676457477/YMODEM+fastest) with modern computers.
 - [Binary hacked Ranger Vision2 terminal](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2702114818/Vision2+Fix+Patch) for relative bank addressing, and to exit to prevent crashing newer OZ.
 - [Binary hacked SpellMaster](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2735439875/Spell-Master+Fix+Patches) for relative bank addressing.
 - [Built and documented an OZ Downgrade ROM](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade) to allow an upgraded Z88 to return to full compatibility with old world software.
