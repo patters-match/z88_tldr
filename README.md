@@ -104,7 +104,7 @@ It's trivial to combine single bank applications onto a single card. However, ap
 - [Documented faster YMODEM serial file transfers](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676457477/YMODEM+fastest) with modern computers.
 - [Binary hacked Ranger Vision2 terminal](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2702114818/Vision2+Fix+Patch) for relative bank addressing, and to exit to prevent crashing newer OZ.
 - [Binary hacked SpellMaster](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2735439875/Spell-Master+Fix+Patches) for relative bank addressing.
-- [Built and documented an OZ Downgrade ROM](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade) to allow an upgraded Z88 to return to full compatibility with old world software.
+- [Built and documented an OZ Downgrade ROM and process](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade) to allow an upgraded Z88 to return to full compatibility with old world software.
 
 ## To do:
 - Describe the files in an OZ ROM bundle (see readme from OZ 4.5)
