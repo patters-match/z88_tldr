@@ -103,7 +103,7 @@ It's trivial to combine single bank applications onto a single card. However, ap
 - [Updated and tidied SourceForge download site](https://sourceforge.net/projects/z88/files/).
 - [Documented faster YMODEM serial file transfers](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676457477/YMODEM+fastest) with modern computers.
 - [Manual for Z-Tape application](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676293651/Z-Tape) on the Z88 Wiki (OCRed using Preview on macOS, and cleaned up). Devised styles to add content using the new Confluence editor, in particular a usable replacement for inline images for Z88 keys in the form of unicode characters in code blocks (e.g. `HELP` `INDEX` `ESC` `◇` `□` `↑` `↓` `←` `→`).
-- [Manual for Ranger Vision2 application](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2679144450/Vision).
+- [Manual for Ranger Vision2 application](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2679144450/Vision) captured from [Rakewell.com page](http://www.rakewell.com/z88/z88comlinks_n.shtml#vision) and tidied to new style as per above.
 - [Binary hacked Ranger Vision2 terminal](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2702114818/Vision2+Fix+Patch) for relative bank addressing, and to exit to prevent crashing newer OZ.
 - [Binary hacked SpellMaster](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2735439875/Spell-Master+Fix+Patches) for relative bank addressing.
 - [Built and documented an OZ Downgrade ROM and process](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade) to allow an upgraded Z88 to return to full compatibility with old world software.
