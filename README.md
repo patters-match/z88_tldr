@@ -102,6 +102,8 @@ It's trivial to combine single bank applications onto a single card. However, ap
 - [Improved FlashTest](https://bitbucket.org/cambridge/z88/pull-requests/1/diff#chg-z88apps/flashtest/fltest.asm) with 4KB sector support, and displaying the card type before starting the test.
 - [Updated and tidied SourceForge download site](https://sourceforge.net/projects/z88/files/).
 - [Documented faster YMODEM serial file transfers](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676457477/YMODEM+fastest) with modern computers.
+- [Manual for Z-Tape](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2676293651/Z-Tape) on the Z88 Wiki, devised styles to add content using the new Confluence editor, in particular a usable replacement for inline graphics for Z88 keys in the form of unicode characters in code blocks (e.g. `HELP` `INDEX` `ESC` `◇` `□` `↑` `↓` `←` `→`).
+- [Manual for Ranger Vision](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2679144450/Vision).
 - [Binary hacked Ranger Vision2 terminal](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2702114818/Vision2+Fix+Patch) for relative bank addressing, and to exit to prevent crashing newer OZ.
 - [Binary hacked SpellMaster](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2735439875/Spell-Master+Fix+Patches) for relative bank addressing.
 - [Built and documented an OZ Downgrade ROM and process](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade) to allow an upgraded Z88 to return to full compatibility with old world software.
