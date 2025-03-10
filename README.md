@@ -39,7 +39,7 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 
 ## OZ version selection
 ### Features and constraints
-![Feature Table](./OZ_feature_table.heic)
+![Feature Table](./OZ_feature_table.png)
 
 ### Suggestions
 - For compatibility with all Z88 software and significant quality-of-life additions built-in (FlashStore, RomCombiner, RomUpdate, XY-Modem, EazyLink2, Installer) plus some bundled application software (SpellMaster, Vision2) - use my custom [OZ 4.0 Downgrade ROM](https://cambridgez88.jira.com/wiki/spaces/ZP/pages/2680160375/Slot+0+Flash+Downgrade)
