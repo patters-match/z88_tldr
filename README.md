@@ -29,7 +29,7 @@ There is another consideration - flash storage can only be erased in 64KB sector
 
 ### Then came RAM apps...
 
-In around 2000, a separate Installer application was developed by Garry Lancaster which allowed ROM dumps to be loaded into RAM and executed from there, avoiding the complexity of combining and blowing the ROM images to EPROM or flash storage. This RAM app support was integrated into OZ 4.6 onwards. A RAM app consists of a .app header, and the same 16KB banks as the ROM app, with .63 bank becoming .ap0, .62 becoming .ap1, and so on.
+In around 2000, a separate Installer application was developed by Garry Lancaster which allowed ROM dumps to be loaded into RAM and executed from there, avoiding the complexity of combining and blowing the ROM images to EPROM or flash storage. This [RAM app](https://sourceforge.net/projects/z88/files/Z88%20RAM%20Applications/) support was integrated into OZ 4.6 onwards. A RAM app consists of a .app header, and the same 16KB banks as the ROM app, with .63 bank becoming .ap0, .62 becoming .ap1, and so on.
 The OZ 5.0 RAM app specification added lz49 compression and allows an app to be concatenated into a single file for simplicity. Serial transfers become less cumbersome, and you can then fit more apps on your flash card.
 
 ### Should I use ROM apps or RAM apps?
