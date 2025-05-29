@@ -25,7 +25,7 @@ Z88 applications were originally distributed on Eprom cards, to be inserted into
 
 The first utility that allowed users to write their own compilations of applications was RomCombiner. It's very flexible, but somewhat tricky for a new Z88 user to understand. It also needs an expanded Z88 configuration, or else you will encounter a "Bad Program" error. RomUpdate is a newer but more straightforward tool to write applications or OZ versions to flash.
 
-There is another consideration - flash storage can only be erased in 64KB sectors (though exceptionally, SST flash memory uses 4KB sectors). Romcombiner has now been updated to allow individual 16KB banks to be erased on SST devices.
+There is another consideration - flash storage can only be erased in 64KB sectors (though exceptionally, SST flash memory uses 4KB sectors). RomCombiner has now been updated to allow individual 16KB banks to be erased on SST devices.
 
 ### Then came RAM apps...
 
