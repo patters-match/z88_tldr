@@ -1,5 +1,7 @@
 # The Cambridge Z88 Computer - An Overview
 
+![Z88 Computer](CambridgeZ88.jpg)
+
 So you're interested in the Z88. You're probably technically minded. However, it's quite a difficult machine to explore for a few reasons:
 - Transferring software onto the machine is complicated and slow
 - Significant developments have been made to the OS incrementally since 1987, up to the present day
