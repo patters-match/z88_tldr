@@ -60,7 +60,7 @@ The OZ 5.0 RAM app specification added lz49 compression and allows an app to be 
 ### How to convert a .BAS file back to text
 This information is from the section "Editing BASIC programs using PipeDream" in the [Filer reference](https://cambridgez88.jira.com/wiki/spaces/UG/pages/35913796/Section+Seven+-+Filer+reference) (a very useful page)
 - You can tee screen output to the special spool text file `:RAM.-/S.sgn`
-- In BASIC you can type `LIST □+S` to dump a program listing out to this file (typed in full with the plus, followed by `ENTER`)
+- In BASIC you can type `LIST □+S` to dump a program listing out to this file
 - Then type `□-S` (typed in full with the minus, followed by `ENTER`) to stop the tee
 - Then use PipeDream to load (`◇` `F` `L`) the file `:RAM.-/S.sgn`
 - Add:
